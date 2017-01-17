@@ -1,1 +1,2 @@
-from view_func.py import view
+from view_func import view
+from viewer_class import Viewer
