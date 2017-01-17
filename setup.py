@@ -8,5 +8,8 @@ setup(name='array_viewer',
       author_email='cje5555@bellsouth.net',
       license='MIT',
       packages=['array_viewer'],
+      install_requires= [
+        'matplotlib'
+      ],
       zip_safe=False
 )

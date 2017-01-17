@@ -1,0 +1,1 @@
+from view_func.py import view
