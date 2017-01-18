@@ -69,8 +69,3 @@ class Viewer(object):
         """Class method to check array isn't larger than 2D"""
         if len(array.shape) > 2:
             raise ValueError("Array is more than 2 dimensions")
-
-import numpy
-x = numpy.array([[1,2,3],[4,5,6]])
-viewer = Viewer(x)
-viewer.view()
