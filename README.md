@@ -1,8 +1,8 @@
-# array_viewer
-A simple solution to visualizing `numpy` arrays while scripting. `array_viewer` uses `matplotlib` to create simple heatmaps of 2D `numpy` arrays.
+# pyctarr
+A simple solution to visualizing `numpy` arrays while scripting. `pyctarr` uses `matplotlib` to create simple heatmaps of 2D `numpy` arrays.
 
 ## Installation
-Currently `array_viewer` is not on PyPI, so the quickest way to install it is to fork this repository and install locally. This is done by navigating to the repository locally on your computer and typing
+Currently `pyctarr` is not on PyPI, so the quickest way to install it is to fork this repository and install locally. This is done by navigating to the repository locally on your computer and typing
 
 ```
 $ pip install .
@@ -11,7 +11,7 @@ $ pip install .
 That's it! Enjoy you visuals!
 
 ## Usage
-`array_viewer` has to main ways of visualizing your arrays: the `view` function and the `Viewer` class. 
+`pyctarr` has to main ways of visualizing your arrays: the `view` function and the `Viewer` class. 
 
 ### `view`
 The view function create a heatmap of the array and displays it. The script will pause while the display is open, and resume when it is closed.
@@ -21,7 +21,7 @@ Ex:
 ```
 #!/Users/edelsonc/miniconda3/bin/python
 import numpy.random as nprnd
-from array_viewer import view
+from pyctarr import view
 
 N = 50 # Dimension of array
 rand_array = nprnd.random((N, N))
@@ -36,7 +36,7 @@ Ex:
 ```
 #!/Users/edelsonc/miniconda3/bin/python
 import numpy.random as nprnd
-from array_viewer import Viewer
+from pyctarr import Viewer
 
 N = 50 # Dimension of array
 plot_time = 0.1  # show plot for 0.1 seconds
