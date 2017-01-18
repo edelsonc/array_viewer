@@ -50,3 +50,9 @@ for _ in range(10):
 ```
 
 The above will create a heatmap that displays for 0.1 seconds and then get updated 10 times.
+
+## Contributions
+A big thanks is owed to amniskin for the name suggestion
+
+## To Do
+* Add testing
