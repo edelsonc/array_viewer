@@ -8,13 +8,13 @@ Currently `pyctarr` is not on PyPI, so the quickest way to install it is to fork
 $ pip install .
 ```
 
-That's it! Enjoy you visuals!
+That's it! Enjoy your visuals!
 
 ## Usage
-`pyctarr` has to main ways of visualizing your arrays: the `view` function and the `Viewer` class. 
+`pyctarr` has two main ways of visualizing your arrays: the `view` function and the `Viewer` class. 
 
 ### `view`
-The view function create a heatmap of the array and displays it. The script will pause while the display is open, and resume when it is closed.
+The view function creates a heatmap of the array and displays it. The script will pause while the display is open, and resume when it is closed.
 
 Ex:
 
@@ -29,7 +29,7 @@ view(rand_array)
 ```
 
 ### `Viewer`
-`Viewer` is a class that stored an array and an associated image and can be updated while scripting. This makes it useful for visualizing updating graphs
+`Viewer` is a class that stores an array and an associated image and can be updated while scripting. This makes it useful for visualizing arrays that are being updated in loops or other similar structures.
 
 Ex:
 
@@ -49,7 +49,7 @@ for _ in range(10):
     viewer.update(new_array)
 ```
 
-The above will create a heatmap that displays for 0.1 seconds and then get updated 10 times.
+The above will create a heatmap that displays for 0.1 seconds and is updated 10 times.
 
 ## Contributions
 A big thanks is owed to amniskin for the name suggestion
